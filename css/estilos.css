@@ -90,6 +90,19 @@
 
 }
 
+@keyframes foto{
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 90%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
 
 .foto{
     margin-top: 20px;
@@ -100,6 +113,10 @@
     border: groove 2px black;
     width: 300px;
     height: 300px;
+    animation-name: foto;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
 }
 
 .fotoropa{
@@ -108,6 +125,11 @@
     padding: 2px 10px;
 }
 
+.fotoropa:hover{
+    height: 360px;
+    width: 350px;
+    transition: all 2.5s;
+ } 
 
 .footer{
     text-align: center;
